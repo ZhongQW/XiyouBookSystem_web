@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="../src/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../src/bootstrap.min.css"/>
+    <script type="text/javascript" src="../src/jquery-3.3.1.min.js"></script>
+    <script src="../src/bootstrap.min.js"></script>
+</head>
+<body>
+<img src="../img/bg-header.png" id="img" />
+<div id="library">
+    <!--<div class="classify">-->
+        <!--<div class="book">-->
+            <!--<a data-toggle="modal" data-target="#myModal">-->
+                <!--<img src="../img/add.jpg" />-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>小王子</p>-->
+            <!--</div>-->
+            <!--<a onclick="handleDetails()" data-index-book="" target="_self">-->
+                <!--<img src="../img/book1.png" />-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>麦田里的守望者</p>-->
+            <!--</div>-->
+            <!--<a onclick="handleDetails()" data-index-book="" target="_self">-->
+            <!--<img src="../img/book2.png" /></a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="classify">-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>追风筝的人</p>-->
+            <!--</div>-->
+            <!--<a href="http://www.baidu.com"><img src="../img/book4.png" /></a>-->
+        <!--</div>-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>第七天</p>-->
+            <!--</div>-->
+            <!--<a href="http://www.baidu.com"><img src="../img/book5.png" /></a>-->
+        <!--</div>-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>别相信任何人</p>-->
+            <!--</div>-->
+            <!--<a href="http://www.baidu.com"><img src="../img/book6.png" /></a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="classify">-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>偷影子的人</p>-->
+            <!--</div>-->
+            <!--<a href="http://www.baidu.com"><img src="../img/book7.png" /></a>-->
+        <!--</div>-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>岛</p>-->
+            <!--</div>-->
+            <!--<a href="http://www.baidu.com"><img src="../img/book8.png" /></a>-->
+        <!--</div>-->
+        <!--<div class="book">-->
+            <!--<div class = "detials">-->
+                <!--<p>活着</p>-->
+            <!--</div>-->
+            <!--<a href="http://www.baidu.com"><img src="../img/book9.png" /></a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div id="page">-->
+        <!--<span class="page_detail" data-index-page = 'previous' onclick="handlePage(this)">上一页</span>-->
+        <!--<span class="page_detail actived">当前页</span>-->
+        <!--<span class="page_detail" data-index-page = 'next' onclick="handlePage(this)">下一页</span>-->
+    <!--</div>-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <div class="login_btn">
+                        <h2>添加图书</h2>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span>书名：</span>
+                        <input type="text" id="book_name" />
+                    </div>
+                    <div>
+                        <span>类型：</span>
+                        <input type="text" id="book_type"  />
+                    </div>
+                    <div>
+                        <span>作者：</span>
+                        <input type="text" id="book_author"  />
+                    </div>
+                    <div>
+                        <span>介绍：</span>
+                        <br/>
+                        <textarea id="book_intro" ></textarea>
+                    </div>
+                    <div>
+                        <span>图片：</span>
+                        <input type="file" onchange="selectImage(this)" id="book_img" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+                    <button id="btn_add_book" type="button" class="btn btn-primary">
+                        确认
+                    </button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+</body>
+</html>

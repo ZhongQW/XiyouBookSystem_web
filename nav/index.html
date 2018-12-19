@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Particles</title>
+	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="../src/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="../src/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div id="mydiv" style="height:900px;"></div>
+	<div id="nav">
+		<ul id="nav_li">
+			<li>
+				<a target="iframe" href="../main/main.html"><img src="../img/123.png" /></a>
+			</li>
+			<li id="activeNav">
+				<a target="iframe" href="../myBook/index.html">我的书籍</a>
+			</li>
+			<li >
+				<a target="iframe" href="../info/info.html">个人中心</a>
+			</li>
+			<li class="sera">
+				<input type="text" id="search" />
+				<i class="fa fa-search" style="color: black" aria-hidden="true"></i>
+			</li>
+			<li>
+				<i id="person" class="fa fa-user-circle" aria-hidden="true"></i>
+				<span class="trg"></span>
+			</li>
+			<li>
+				<a id="sign_out" href="../index.html"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+		<ul id="find_content">
+			<!--<li data-index-book="" onclick="handleBookDetail()">12345</li>-->
+		</ul>
+		<div id="personcenter">
+			<ul>
+				<li>
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<a target="iframe" href="../info/info.html"><span>个人信息</span></a>
+				</li>
+				<li>
+					<i class="fa fa-bell" aria-hidden="true"></i>
+					<a target="iframe" href="../message/mess.html"><span>通知</span></a>
+				</li>
+				<li>
+					<i class="fa fa-bookmark" aria-hidden="true"></i>
+					<a target="iframe" href="../myCollect/mycollect.html"><span>我的收藏</span></a>
+				</li>
+				<li>
+					<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+					<a target="iframe" href="../myAppoint/myappoint.html"><span>我的预约</span></a>
+				</li>
+				<li>
+					<i class="fa fa-map" aria-hidden="true"></i>
+					<a target="iframe" href="../myborrow/myborrow.html"><span>我的借阅</span></a>
+				</li>
+			</ul>
+			<span id="trg"></span>
+		</div>
+
+	</div>
+	<div id="content_">
+		<iframe id="iframe" name="iframe" src="../main/main.html"></iframe>
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+		    //配置
+		    var config = {
+		        vx: 4,	//小球x轴速度,正为右，负为左
+		        vy: 4,	//小球y轴速度
+		        height: 2,	//小球高宽，其实为正方形，所以不宜太大
+		        width: 2,
+		        count: 180,		//点个数
+		        color: "169,169,169", 	//点颜色
+		        stroke: "105,105,105", 		//线条颜色
+		        dist: 6050, 	//点吸附距离
+		        e_dist: 10000, 	//鼠标吸附加速距离
+		        max_conn: 5 	//点到点最大连接数
+		    };
+
+		    //调用
+		    CanvasParticle(config);
+		}
+	</script>
+	<script type="text/javascript" src="../src/canvas-particle.js"></script>
+	<script src="index.js" ></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/*
+    Create by WebStorm.
+    User: ZhongQw
+    Date: 2018/12/8
+    Time: 14:23
+*/
+ul.nav-tabs{
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child{
+    border-top: none;
+}
+ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+
+ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+#nav{
+    position: fixed;
+    top: 50px;
+}
+#book{
+    position: absolute;
+    top: 15px;
+    font-size: 40px;
+}
+#section-1, #section-2, #section-3{
+    height: auto;
+    margin-top: 60px;
+    /*border: red 1px solid;*/
+}
+h2{
+    width: 120px;
+    margin: 0 auto;
+}
+.pointer:hover{
+    cursor: pointer;
+}

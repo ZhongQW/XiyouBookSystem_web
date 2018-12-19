@@ -1,0 +1,169 @@
+/*
+    Create by WebStorm.
+    User: ZhongQw
+    Date: 2018/11/29
+    Time: 18:33
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white
+}
+a{
+    text-decoration: none;
+}
+#iframe{
+    width: 100%;
+    height: 1310px;
+    border: none;
+}
+#content_{
+    position: absolute;
+    top: 50px;
+    left: 178px;
+    width: 1000px;
+    height: 1000px;
+    margin-top: -12px;
+}
+#nav {
+    margin-top: -1px;
+    position: fixed;
+    top: 1px;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    z-index: 10;
+}
+#nav  #nav_li li{
+    list-style: none;
+    display: inline-block;
+}
+#nav #nav_li li a, #nav #nav_li li span, #nav #nav_li li i{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 50px;
+}
+#nav #nav_li li:nth-child(1) img{
+    width: 170px;
+    height: 50px;
+}
+#nav #nav_li li:nth-child(n+2){
+    vertical-align: top;
+    margin-left: 20px;
+}
+.trg{
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-top: 6px solid white;
+    border-left: 6px solid #333333;
+    border-right: 6px solid #333333;
+    top: 22px;
+    left: 1267px;
+}
+#search{
+    border: none;
+    border-radius: 10px;
+    width: 240px;
+    height: 34px;
+}
+.sera{
+    margin-top: 8px;
+}
+.sera input{
+    text-indent: 28px;
+    font-size: 20px;
+    outline: none;
+}
+.sera i{
+    position: absolute;
+    left: 440px;
+    top: 0;
+}
+#nav #nav_li li:nth-last-of-type(2){
+    margin-left: 550px;
+}
+#nav #nav_li li:nth-last-of-type(2) i{
+    font-size: 30px;
+}
+#nav #nav_li li:nth-last-of-type(1) i{
+    font-size: 30px;
+}
+#nav #nav_li li:nth-last-of-type(1){
+    margin-left: 30px;
+}
+#nav #nav_li li a:hover, #nav #nav_li li i:hover{
+    color: deepskyblue;
+}
+#personcenter{
+    position: absolute;
+    top: 50px;
+    left: 1150px;
+    background-color: white;
+    width: 170px;
+    height: 290px;
+    border: 1px #eeeeee solid;
+    z-index: 10;
+    box-shadow: grey 3px 3px 10px;
+    display: none;
+}
+#personcenter ul{
+    list-style: none;
+}
+#personcenter ul li i{
+    color: #333333;
+}
+#personcenter ul li a span{
+    line-height: 56px;
+    margin-left: 14px;
+    color: black;
+}
+#personcenter ul li{
+    height: 56px;
+    border: 1px #eeeeee solid;
+    padding-left: 20px;
+    transition: .3s;
+    font-family: 微软雅黑;
+}
+#personcenter ul li:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+#trg{
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-bottom: 10px solid gainsboro;
+    border-left: 10px solid rgba(225,225,225,0);
+    border-right: 10px solid rgba(225,225,225,0);
+    top: -10px;
+    left: 100px;
+    z-index: 11;
+}
+#find_content{
+    display: none;
+    /*border: red solid 1px;*/
+    position: fixed;
+    top: 43px;
+    left: 440px;
+}
+#find_content li{
+    list-style: none;
+    text-indent: 10px;
+    line-height: 35px;
+    color: black;
+    height: 35px;
+    width: 235px;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    transition: .3s;
+}
+#find_content li:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}

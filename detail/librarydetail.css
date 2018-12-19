@@ -1,0 +1,170 @@
+#main{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+#menu{
+    position: relative;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:whitesmoke;
+}
+#menu i,#menu span{
+    color: #32A478;
+}
+#menu span{
+    margin-left: 5px;
+}
+#menu a{
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:active{
+    color:black;
+}
+
+#menu a:hover{
+    color: black;
+    text-decoration: none;
+}
+#detail{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background-color:whitesmoke;
+}
+#icon{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+}
+
+#cover{
+    position: relative;
+    margin:auto;
+    width: 300px;
+    height: 400px;
+    left: 40px;
+}
+#message li input{
+    float: left;
+    text-decoration: none;
+    background-color: powderblue;
+    border: none;
+    width: 110px;
+    height: 40px;
+    margin-left: 45px;
+    border-radius: 5px;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+/*#message li input:hover{*/
+    /*background-color: rgba(135,206,235);*/
+/*}*/
+ul{
+    list-style-type:none
+}
+ul li{
+    position: relative;
+    margin: 5px;
+}
+ul hr{
+    color: honeydew;
+}
+#message{
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+#message ul{
+    padding: 0;
+}
+#message ul li{
+}
+hr{
+    color: #49afcd;
+    margin-right: 30px;
+}
+#discuss{
+    background-color:whitesmoke;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#discuss i, #discuss span{
+    font-size: 30px;
+}
+#discuss i{
+    color: #32A478;
+    margin-left: 14px;
+    margin-right: 6px;
+}
+#comment textarea{
+    display: block;
+    resize: none;
+    width: 900px;
+    height: 100px;
+    border-radius: 5px;
+    border-color: darkgray;
+    padding: 10px;
+    margin:0 auto;
+    outline: none;
+}
+#comment input{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: rgba(	175,238,238, 0.7);
+    border: none;
+    width: 110px;
+    height: 40px;
+    margin-left: 45px;
+    border-radius: 5px;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+#comment input:hover{
+    background-color: rgba(	175,238,238, 1);
+}
+.review{
+    color: black;
+    margin:15px
+}
+
+#comment{
+    background-color:whitesmoke;
+    margin: 7px;
+}
+
+#talk{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.rounded-circle{
+    width: 40px;
+    height: 40px;
+}
+
+.data{
+    color: gray;
+    font-size: small;
+}
+.comment{
+    margin-left: 40px;
+    margin-top: 10px;
+}

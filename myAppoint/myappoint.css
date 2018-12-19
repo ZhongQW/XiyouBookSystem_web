@@ -1,0 +1,39 @@
+/*
+    Create by WebStorm.
+    User: ZhongQw
+    Date: 2018/12/17
+    Time: 13:11
+*/
+body{
+    background-image:url("../img/borrow.png");
+    background-size:1000px  800px;
+    background-repeat:no-repeat;
+}
+#section-4{
+   position: absolute;
+    left: 100px;
+    width: 800px;
+    top: 100px;
+}
+
+#appointtable{
+    position: absolute;
+    font-size: large;
+    left: 80px;
+    width: 800px;
+    top: 80px;
+    border-radius:25px;
+    border:2px solid  white;
+    /*color: white;*/
+}
+th,td{
+    border:2px solid  white;
+    height: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+.col-md-2{
+    color: #8a6d3b;
+    text-align: center;
+}
